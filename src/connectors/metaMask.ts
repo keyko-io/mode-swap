@@ -7,5 +7,5 @@ export function isMetaMask(connector: Connector) {
   return connector instanceof MetaMask
 }
 
-const connector = initializeConnector<MetaMask>((actions) => new MetaMask(actions, false))
+const connector = initializeConnector<MetaMask>((actions) => new MetaMask({ actions }));
 export default toWeb3Connector(connector)

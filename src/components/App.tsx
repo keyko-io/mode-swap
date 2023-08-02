@@ -1,9 +1,9 @@
 import { useCallback, useRef, useState } from 'react'
 import { FiGlobe } from 'react-icons/fi'
-import { SupportedLocale, SUPPORTED_LOCALES, SwapWidget } from '@uniswap/widgets'
+import { SupportedLocale, SUPPORTED_LOCALES, SwapWidget } from '@kokal33/widgets'
 
 // ↓↓↓ Don't forget to import the widgets' fonts! ↓↓↓
-import '@uniswap/widgets/fonts.css'
+import '@kokal33/widgets/fonts.css'
 // ↑↑↑
 
 import { useActiveProvider } from '../connectors'
@@ -25,7 +25,7 @@ export default function App() {
   const provider = useActiveProvider()
 
   // The locale to pass to the SwapWidget.
-  // This is a value from the SUPPORTED_LOCALES exported by @uniswap/widgets.
+  // This is a value from the SUPPORTED_LOCALES exported by @kokal33/widgets.
   const [locale, setLocale] = useState<SupportedLocale>('en-US')
   const onSelectLocale = useCallback((e) => setLocale(e.target.value), [])
 
@@ -54,11 +54,11 @@ export default function App() {
 
           <div className={styles.widget}>
             <SwapWidget
-              jsonRpcEndpoint={JSON_RPC_URL}
+              jsonRpcUrlMap={JSON_RPC_URL}
               tokenList={TOKEN_LIST}
               provider={provider}
               locale={locale}
-              onConnectWallet={focusConnectors}
+              onConnectWalletClick={focusConnectors}
               defaultInputTokenAddress="NATIVE"
               defaultInputAmount="1"
               defaultOutputTokenAddress={UNI}

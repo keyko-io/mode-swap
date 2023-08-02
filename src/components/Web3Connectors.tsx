@@ -7,10 +7,18 @@ function Connector({ web3Connector }: { web3Connector: Web3Connector }) {
   const isActive = hooks.useIsActive()
   const onClick = useCallback(() => {
     if (isActive) {
-      connector.deactivate()
+      if (typeof connector.deactivate === 'function') {
+        connector.deactivate();
+      }
     } else {
-      connectors.forEach(([connector]) => connector.deactivate())
-      connector.activate()
+      connectors.forEach(([connector]) => {
+        if (typeof connector.deactivate === 'function') {
+          connector.deactivate();
+        }
+      });
+      if (typeof connector.activate === 'function') {
+        connector.activate();
+      }
     }
   }, [connector, isActive])
 
