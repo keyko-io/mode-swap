@@ -1,9 +1,9 @@
 import { useCallback, useRef, useState } from 'react'
 import { FiGlobe } from 'react-icons/fi'
-import { SupportedLocale, SUPPORTED_LOCALES, SwapWidget } from '@kokal33/widgets'
+import { SupportedLocale, SUPPORTED_LOCALES, SwapWidget } from '@keyko.io/widgets'
 
 // ↓↓↓ Don't forget to import the widgets' fonts! ↓↓↓
-import '@kokal33/widgets/fonts.css'
+import '@keyko.io/widgets/fonts.css'
 // ↑↑↑
 
 import { useActiveProvider } from '../connectors'
