@@ -8,7 +8,6 @@ import '@keyko.io/widgets/fonts.css'
 
 import { useActiveProvider } from '../connectors'
 import { JSON_RPC_URL } from '../constants'
-import DocumentationCards from './DocumentationCards'
 import Web3Connectors from './Web3Connectors'
 import styles from '../styles/Home.module.css'
 
@@ -45,7 +44,7 @@ export default function App() {
       </div>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Uniswap Swap Widget</h1>
+        <h1 className={styles.title}>Mode Swap</h1>
 
         <div className={styles.demo}>
           <div className={styles.connectors} ref={connectors} tabIndex={-1}>
@@ -67,8 +66,6 @@ export default function App() {
         </div>
 
         <hr className={styles.rule} />
-
-        <DocumentationCards />
       </main>
     </div>
   )
