@@ -1,0 +1,58 @@
+[
+  {
+    "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+    "chainId": 919,
+    "decimals": 6,
+    "logoURI": "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png?1547042389",
+    "name": "USDC",
+    "symbol": "USDC"
+  },
+  {
+    "address": "0xE7798f023fC62146e8Aa1b36Da45fb70855a77Ea",
+    "chainId": 919,
+    "decimals": 6,
+    "logoURI": "https://assets.coingecko.com/coins/images/325/small/Tether.png?1668148663",
+    "name": "Tether USD",
+    "symbol": "USDT"
+  },
+  {
+    "address": "0x9e5AAC1Ba1a2e6aEd6b32689DFcF62A509Ca96f3",
+    "chainId": 919,
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png?1687143508",
+    "name": "Dai stable coin",
+    "symbol": "DAI"
+  },
+  {
+    "address": "0x3e7eF8f50246f725885102E8238CBba33F276747",
+    "chainId": 919,
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/12645/small/AAVE.png?1601374110",
+    "name": "Aave",
+    "symbol": "AAVE"
+  },
+  {
+    "address": "0x9e1028F5F1D5eDE59748FFceE5532509976840E0",
+    "chainId": 919,
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png?1547034700",
+    "name": "Link",
+    "symbol": "LINK"
+  },
+  {
+    "address": "0x3bB4445D30AC020a84c1b5A8A2C6248ebC9779D0",
+    "chainId": 919,
+    "decimals": 8,
+    "logoURI": "https://assets.coingecko.com/coins/images/7598/small/wrapped_bitcoin_wbtc.png?1548822744",
+    "name": "Wrapped BTC",
+    "symbol": "WBTC"
+  },
+  {
+    "address": "0x3390108E913824B8eaD638444cc52B9aBdF63798",
+    "chainId": 919,
+    "decimals": 2,
+    "logoURI": "https://assets.coingecko.com/coins/images/5164/small/EURS_300x300.png?1550571779",
+    "name": "Stasis EURO",
+    "symbol": "EURS"
+  }
+]

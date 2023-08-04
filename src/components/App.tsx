@@ -7,11 +7,11 @@ import '@keyko.io/widgets/fonts.css'
 // ↑↑↑
 
 import { useActiveProvider } from '../connectors'
-import { JSON_RPC_URL } from '../constants'
 import Web3Connectors from './Web3Connectors'
 import styles from '../styles/Home.module.css'
+import { JSON_RPC_URL } from 'src/constants/jsonRpcUrl'
+import tokenList from 'src/constants/tokenList.json'
 
-const TOKEN_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org'
 const UNI = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984'
 
 export default function App() {
@@ -54,7 +54,7 @@ export default function App() {
           <div className={styles.widget}>
             <SwapWidget
               jsonRpcUrlMap={JSON_RPC_URL}
-              tokenList={TOKEN_LIST}
+              tokenList={tokenList}
               provider={provider}
               locale={locale}
               onConnectWalletClick={focusConnectors}
