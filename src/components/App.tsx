@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react'
 import { FiGlobe } from 'react-icons/fi'
-import { SupportedLocale, SUPPORTED_LOCALES, SwapWidget } from '@keyko.io/widgets'
+import { SupportedLocale, SUPPORTED_LOCALES, SwapWidget, Theme } from '@keyko.io/widgets'
 
 // ↓↓↓ Don't forget to import the widgets' fonts! ↓↓↓
 import '@keyko.io/widgets/fonts.css'
@@ -13,6 +13,18 @@ import { JSON_RPC_URL } from 'src/constants/jsonRpcUrl'
 import tokenList from 'src/constants/tokenList.json'
 
 const UNI = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984'
+const theme: Theme = {
+  primary: '#dffe00',
+  secondary: '#919467',
+  interactive: '#121212',
+  container: '#070707',
+  module: '#121212',
+  accent: '#1c1c0d',
+  onAccent: '#dffe00',
+  outline: '#121212',
+  dialog: '#90955e',
+  networkDefaultShadow: '#dffe00',
+}
 
 export default function App() {
   // When a user clicks "Connect your wallet" in the SwapWidget, this callback focuses the connectors.
@@ -61,6 +73,7 @@ export default function App() {
               defaultInputTokenAddress="NATIVE"
               defaultInputAmount="1"
               defaultOutputTokenAddress={UNI}
+              theme={theme}
             />
           </div>
         </div>

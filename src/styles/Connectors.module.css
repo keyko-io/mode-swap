@@ -19,6 +19,7 @@
 .connector label {
   flex-grow: 1;
   font-weight: 500;
+  color: #c3c5cb;
 }
 
 .connector .status {
