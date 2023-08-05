@@ -8,7 +8,7 @@ import { JSON_RPC_URL } from 'src/constants/jsonRpcUrl'
 
 // WalletConnect relies on Buffer, so it must be polyfilled.
 if (!('Buffer' in window)) {
-  window.Buffer = Buffer
+  (window as any).Buffer = Buffer
 }
 
 export function isWalletConnect(connector: Connector) {
@@ -18,11 +18,10 @@ export function isWalletConnect(connector: Connector) {
 const connector = initializeConnector<WalletConnect>(
   (actions) =>
     new WalletConnect(
-      actions,
       {
-        rpc: { 1: JSON_RPC_URL },
-      },
-      false
+        actions,
+        options: {rpc: { 1: JSON_RPC_URL }}
+      }
     )
 )
 export default toWeb3Connector(connector)
