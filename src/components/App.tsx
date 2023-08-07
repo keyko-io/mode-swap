@@ -20,8 +20,9 @@ const theme: Theme = {
   container: '#070707',
   module: '#121212',
   accent: '#1c1c0d',
+  fontFamily: 'Chakra Petch',
   onAccent: '#dffe00',
-  outline: '#121212',
+  outline: '#F9FAF5',
   dialog: '#90955e',
   networkDefaultShadow: '#dffe00',
 }
@@ -77,8 +78,6 @@ export default function App() {
             />
           </div>
         </div>
-
-        <hr className={styles.rule} />
       </main>
     </div>
   )

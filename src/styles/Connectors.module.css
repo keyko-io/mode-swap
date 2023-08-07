@@ -8,7 +8,6 @@
 .connector {
   padding: 0.5rem 1rem;
   border: 1px solid #c3c5cb;
-  border-radius: 10px;
   display: flex;
   justify-content: flex-end;
   grid-auto-flow: column;
