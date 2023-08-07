@@ -39,7 +39,7 @@ export default function App() {
   // The locale to pass to the SwapWidget.
   // This is a value from the SUPPORTED_LOCALES exported by @kokal33/widgets.
   const [locale, setLocale] = useState<SupportedLocale>('en-US')
-  const onSelectLocale = useCallback((e) => setLocale(e.target.value), [])
+  const onSelectLocale = useCallback((e: any) => setLocale(e.target.value), [])
 
   return (
     <div className={styles.container}>
